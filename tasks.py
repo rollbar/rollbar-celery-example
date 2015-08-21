@@ -18,5 +18,6 @@ def handle_task_failure(**kw):
 
 @app.task
 def add(x, y):
+    z = x + y
     foo = bar
-    return x + y
+    return z
