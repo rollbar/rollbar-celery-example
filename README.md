@@ -8,19 +8,19 @@ A small example showing how to use Rollbar to catch and report exceptions from C
 
 2. Install package requirements
 
-```
-pip install -r requirements.txt
-```
+  ```
+  pip install -r requirements.txt
+  ```
 
 3. Run the worker:
 
-```
-celery -A tasks worker --loglevel=info
+  ```
+  celery -A tasks worker --loglevel=info
 ```
 
 4. Run `send_job.py`:
 
-```
-python send_job.py
-```
+  ```
+  python send_job.py
+  ```
 
