@@ -1,0 +1,11 @@
+amqp==1.4.6
+anyjson==0.3.3
+argparse==1.2.1
+billiard==3.3.0.20
+celery==3.1.18
+kombu==3.0.26
+pytz==2015.4
+redis==2.10.3
+requests==2.7.0
+rollbar==0.9.13
+wsgiref==0.1.2
