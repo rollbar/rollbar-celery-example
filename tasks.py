@@ -4,6 +4,12 @@
 import rollbar
 rollbar.init('92c10f5616944b81a2e6f3c6493a0ec2', 'celerytest')
 
+def celery_base_data_hook(request, data):
+    data['framework'] = 'celery'
+    
+rollbar.BASE_DATA_HOOK = celery_base_data_hook
+
+
 from celery import Celery
 from celery.signals import task_failure
 
